@@ -6,23 +6,25 @@ Toledo Rodríguez Aketzally
 
  ## El internet de las cosas (IOT)
   ### Vehículos Autónomos
-  Un vehículo autónomo, también conocido como robótico, o informalmente como sin conductor o autoconducido, es un vehículo capaz de imitar las capacidades humanas de manejo y control. Como vehículo autónomo, es capaz de percibir el medio que le rodea y navegar en consecuencia.2​ El conductor podrá elegir el destino, pero no se le requiere para activar ninguna operación mecánica del vehículo.
+  Un vehículo autónomo, también conocido como robótico, o informalmente como sin conductor o autoconducido, es un vehículo capaz de imitar las capacidades humanas de manejo y control. Como vehículo autónomo, es capaz de percibir el medio que le rodea y navegar en consecuencia.El conductor podrá elegir el destino, pero no se le requiere para activar ninguna operación mecánica del vehículo.
 
-   - Drones: Un vehículo aéreo no tripulado (VANT), UAV (del inglés unmanned aerial vehicle) o comúnmente dron1​nota 1​ es una aeronave que vuela sin tripulación. Un VANT es un vehículo sin tripulación reutilizable, capaz de mantener de manera autónoma un nivel de vuelo controlado y sostenido, y propulsado por un motor de explosión, eléctrico o de reacción.
+   - Drones: Un vehículo aéreo no tripulado (VANT), UAV (del inglés unmanned aerial vehicle) o comúnmente dron1 es una aeronave que vuela sin tripulación. Un VANT es un vehículo sin tripulación reutilizable, capaz de mantener de manera autónoma un nivel de vuelo controlado y sostenido, y propulsado por un motor de explosión, eléctrico o de reacción.
    
-   -Ciudades Inteligentes: Es aquella ciudad que se caracteriza por el uso intensivo de las TIC en la creación y mejoramiento de los sistemas que componen la ciudad.
+   - Ciudades Inteligentes: Es aquella ciudad que se caracteriza por el uso intensivo de las TIC en la creación y mejoramiento de los sistemas que componen la ciudad.
    
    __Fuentes:__  https://www.xataka.com/vehiculos/he-probado-el-coche-autonomo-de-nivel-5-que-tiene-bmw-en-el-mobile-world-congress-y-me-he-quedado-con-ganas-de-mas
-  https://www.xataka.com/automovil/nuestras-prioridades-conectividad-coche-electrico-y-coche-autonomo-en-ese-orden-luca-de-meo-presidente-de-seat
-  https://www.businessinsider.com/drone-technology-uses-2017-7
-  https://iot.ieee.org/newsletter/march-2018/iot-as-a-key-enabler-to-singapore-s-smart-nation-vision
-  https://www.researchgate.net/publication/283757446_Autonomous_Cars_Past_Present_and_Future_-_A_Review_of_the_Developments_in_the_Last_Century_the_Present_Scenario_and_the_Expected_Future_of_Autonomous_Vehicle_Technology
-  http://www.udgvirtual.udg.mx/paakat/index.php/paakat/article/view/299
+   https://www.xataka.com/automovil/nuestras-prioridades-conectividad-coche-electrico-y-coche-autonomo-en-ese-orden-luca-de-meo-presidente-de-seat
+   https://www.businessinsider.com/drone-technology-uses-2017-7
+   https://iot.ieee.org/newsletter/march-2018/iot-as-a-key-enabler-to-singapore-s-smart-nation-vision
+   https://www.researchgate.net/publication/283757446_Autonomous_Cars_Past_Present_and_Future_-_A_Review_of_the_Developments_in_the_Last_Century_the_Present_Scenario_and_the_Expected_Future_of_Autonomous_Vehicle_Technology
+   http://www.udgvirtual.udg.mx/paakat/index.php/paakat/article/view/299
+   https://iot.ieee.org/newsletter/march-2018/the-internet-of-nothing-and-the-internet-of-things
    
  ## Inteligencia artificial
  - Redes neuronales: Las redes neuronales son más que otra forma de emular ciertas características propias de los humanos, como la capacidad de memorizar y de asociar hechos. Si se examinan con atención aquellos problemas que no pueden expresarse a través de un algoritmo, se observará que todos ellos tienen una característica en común: la experiencia. 
  
-__Fuentes:__ ftp://decsai.ugr.es/pub/usuarios/castro/Material-Redes-Neuronales/Libros/matich-redesneuronales.pdf
+__Fuentes:__ 
+ ftp://decsai.ugr.es/pub/usuarios/castro/Material-Redes-Neuronales/Libros/matich-redesneuronales.pdf
  http://neuralnetworksanddeeplearning.com/
  https://www.digitaltrends.com/cool-tech/what-is-an-artificial-neural-network/ 
  https://aitrends.com/ai-insider/edge-computing-ai-self-driving-cars/
@@ -35,13 +37,17 @@ __Fuentes:__ ftp://decsai.ugr.es/pub/usuarios/castro/Material-Redes-Neuronales/L
  ## Telecomunicaciones
   ### Infraestructura de Redes
  - Red 5G: Las redes de telecomunicaciones de la próxima generación (5G) llegarán al mercado hacia 2020. Más allá de las mejoras en la velocidad, se espera que la tecnología 5G desate todo un ecosistema del Internet de las Cosas masivo en el que las redes pueden satisfacer las necesidades de comunicación de miles de millones de dispositivos conectados, con un equilibrio justo entre velocidad, latencia y costo.
-__Fuentes:__ https://www.cnet.com/es/como-se-hace/que-es-el-5g-esto-es-lo-que-debes-saber/
+__Fuentes:__
+https://www.cnet.com/es/como-se-hace/que-es-el-5g-esto-es-lo-que-debes-saber/
 https://www.gemalto.com/latam/telecom/inspiracion/5g
 
  ### Tecnología celular
- - Android P: 
+ - Android P: Google believes strongly that your phone should be intimately yours, and should adapt to your life, rather than the other way around. Android 9.0 Pie is bringing several features powered by artificial intelligence (AI).
+ #### Baterías
+ Mientras los smartphones y los wearables siguen creciendo en los ultimos años, las baterías no han crecido en las últimas decadas y las actuales tienen poder limitado. Algunas de las nuevas tecnologías son las baterías de Nanocable de oro, baterías de ion-litio en estado sólido, baterías de grafeno, microsuperconductores hecho con laser entre otros.
  
- __Fuentes::__ https://www.digitaltrends.com/mobile/google-android-p-news
+ __Fuentes::__ https://,www.digitaltrends.com/mobile/google-android-p-news
+ https://www.pocket-lint.com/gadgets/news/130380-future-batteries-coming-soon-charge-in-seconds-last-months-and-power-over-the-air
  
  ## Ciencia de datos
  ### Edge Computing
