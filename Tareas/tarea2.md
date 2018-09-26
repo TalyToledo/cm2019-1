@@ -45,25 +45,25 @@ Ese funcionamiento "pasivo" de todos esos dispositivos es lo que quiere cambiar 
 
 ## Eventos sobre tecnolgía Móvil
   - MWC 2018 : https://www.mobileworldcongress.com/about/
- https://www.mobileworldcongress.com/wp-content/uploads/2018/04/20557-Post-Event-Report-2.pdf
+ https://www.mobileworldcongress.com/wp-content/uploads/2018/04/20557-Post-Event-Report-2.pdf   
  - YoMo: https://www.mwcyomo.com/es/
  - Global Mobile Awards: https://www.mobileworldcongress.com/conference-programmes/global-mobile-awards-2018/winners-2018/
  - #CaseForChange: https://www.caseforchange.com/
 
-__Fuentes:__  https://www.xataka.com/vehiculos/he-probado-el-coche-autonomo-de-nivel-5-que-tiene-bmw-en-el-mobile-world-congress-y-me-he-quedado-con-ganas-de-mas
-   https://www.xataka.com/automovil/nuestras-prioridades-conectividad-coche-electrico-y-coche-autonomo-en-ese-orden-luca-de-meo-presidente-de-seat
-   https://www.businessinsider.com/drone-technology-uses-2017-7
-   https://iot.ieee.org/newsletter/march-2018/iot-as-a-key-enabler-to-singapore-s-smart-nation-vision
-   https://www.researchgate.net/publication/283757446_Autonomous_Cars_Past_Present_and_Future_-_A_Review_of_the_Developments_in_the_Last_Century_the_Present_Scenario_and_the_Expected_Future_of_Autonomous_Vehicle_Technology
-   http://www.udgvirtual.udg.mx/paakat/index.php/paakat/article/view/299
-   https://iot.ieee.org/newsletter/march-2018/the-internet-of-nothing-and-the-internet-of-things
-  ftp://decsai.ugr.es/pub/usuarios/castro/Material-Redes-Neuronales/Libros/matich-redesneuronales.pdf
- http://neuralnetworksanddeeplearning.com/
- https://www.digitaltrends.com/cool-tech/what-is-an-artificial-neural-network/ 
- https://aitrends.com/ai-insider/edge-computing-ai-self-driving-cars/
- https://www.cnet.com/es/como-se-hace/que-es-el-5g-esto-es-lo-que-debes-saber/
-https://www.gemalto.com/latam/telecom/inspiracion/5g
-https://,www.digitaltrends.com/mobile/google-android-p-news
- https://www.pocket-lint.com/gadgets/news/130380-future-batteries-coming-soon-charge-in-seconds-last-months-and-power-over-the-air
-  Garcia Lopez, P., Montresor, A., Epema, D., Datta, A., Higashino, T., Iamnitchi, A., … Riviere, E. (2015). Edge-centric Computing. ACM SIGCOMM Computer Communication Review, 45(5), 37–42. doi:10.1145/2831347.2831354
-   https://www.zenlayer.com/autonomous-cars-helped-pave-way-edge-computing/
+__Fuentes:__  https://www.xataka.com/vehiculos/he-probado-el-coche-autonomo-de-nivel-5-que-tiene-bmw-en-el-mobile-world-congress-y-me-he-quedado-con-ganas-de-mas   
+   https://www.xataka.com/automovil/nuestras-prioridades-conectividad-coche-electrico-y-coche-autonomo-en-ese-orden-luca-de-meo-presidente-de-seat   
+   https://www.businessinsider.com/drone-technology-uses-2017-7   
+   https://iot.ieee.org/newsletter/march-2018/iot-as-a-key-enabler-to-singapore-s-smart-nation-vision   
+   https://www.researchgate.net/publication/283757446_Autonomous_Cars_Past_Present_and_Future_-_A_Review_of_the_Developments_in_the_Last_Century_the_Present_Scenario_and_the_Expected_Future_of_Autonomous_Vehicle_Technology   
+   http://www.udgvirtual.udg.mx/paakat/index.php/paakat/article/view/299   
+   https://iot.ieee.org/newsletter/march-2018/the-internet-of-nothing-and-the-internet-of-things   
+  ftp://decsai.ugr.es/pub/usuarios/castro/Material-Redes-Neuronales/Libros/matich-redesneuronales.pdf   
+ http://neuralnetworksanddeeplearning.com/    
+ https://www.digitaltrends.com/cool-tech/what-is-an-artificial-neural-network/    
+ https://aitrends.com/ai-insider/edge-computing-ai-self-driving-cars/    
+ https://www.cnet.com/es/como-se-hace/que-es-el-5g-esto-es-lo-que-debes-saber/     
+https://www.gemalto.com/latam/telecom/inspiracion/5g    
+https://,www.digitaltrends.com/mobile/google-android-p-news    
+ https://www.pocket-lint.com/gadgets/news/130380-future-batteries-coming-soon-charge-in-seconds-last-months-and-power-over-the-air   
+  Garcia Lopez, P., Montresor, A., Epema, D., Datta, A., Higashino, T., Iamnitchi, A., … Riviere, E. (2015). Edge-centric Computing. ACM SIGCOMM Computer Communication Review, 45(5), 37–42. doi:10.1145/2831347.2831354   
+   https://www.zenlayer.com/autonomous-cars-helped-pave-way-edge-computing/   
