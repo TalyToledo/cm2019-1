@@ -42,6 +42,9 @@ Ese funcionamiento "pasivo" de todos esos dispositivos es lo que quiere cambiar 
 
  A causa de la necesidad de tener una comunicación robusta y reducir el tiempo de interacción entre las cosas y las herramientas de las Tecnologías de Información (TI) y las Tecnologías de Operación (TO), la industria ya comienza a observar un modelo de negocio en la nube llamado Cómputo en el Borde o Edge Computing, que consiste en acercar a las soluciones en producción, los datos y el procesamiento necesarios para obtener información de valor para la toma de decisiones y acciones en tiempo real, así como dar mayor soporte a las nuevas tecnologías.
  
+ Uno de los principales problemas de centralizar los datos en la nube es la perdida de privacidad al proporcionar datos personales a servicios como el comercio electrónico, servicios de clasificación, motores de búsqueda, redes sociales y servicios de localización.
+Otro problema es 
+ 
 
 ## Eventos sobre tecnolgía Móvil
   - MWC 2018 : https://www.mobileworldcongress.com/about/
