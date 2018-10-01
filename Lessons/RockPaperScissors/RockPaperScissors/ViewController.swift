@@ -24,6 +24,12 @@ class ViewController: UIViewController {
         switch status {
         case .start:
             gameStatus.text = "Rock, Paper, Scissors?"
+        case .win:
+            gameStatus.text = "You win!"
+        case .lose:
+            gameStatus.text = "You lose!"
+        case .draw:
+            gameStatus.text = "It's a draw!"
         }
     }
 
