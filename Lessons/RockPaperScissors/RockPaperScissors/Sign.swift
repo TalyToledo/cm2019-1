@@ -21,6 +21,12 @@ func randomSign() -> Sign {
     }
 }
 
+func selectState (mySign: Sign, appSign: Sign) -> GameState{
+    
+    let status = mySign.stateOfGame(computerChoice: appSign)
+    return status
+}
+
 enum Sign {
     case rock, paper, scissors
     
@@ -35,11 +41,9 @@ enum Sign {
         }
     }
     
-    func stateOfGame(opponentChoice: Sign) -> GameState {
+    func stateOfGame(computerChoice: Sign) -> GameState {
         
-        let computerChoice = randomSign()
-        
-        switch opponentChoice {
+        switch self {
         case .rock:
             if computerChoice == .paper{
                 return .lose
