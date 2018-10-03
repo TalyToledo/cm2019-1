@@ -63,6 +63,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let swipeConfiguration = UISwipeActionsConfiguration(actions: [shareAction])
         return swipeConfiguration
     }
+    
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue){
+        
+    }
 
 }
 
