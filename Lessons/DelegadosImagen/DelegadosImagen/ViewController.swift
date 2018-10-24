@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ImageDownloaderDelegate {
+    
+    var imageDownloader: ImageDownloader?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,10 @@ class ViewController: UIViewController {
         loadingLabel.isHidden = true
         
         let imageUrl: String = "https://media.stsci.edu/uploads/image/display_image/4240/STScI-H-p1850a-d1280x720.png"
+        
+        imageDownloader = ImageDownloader(imageUrl: imageUrl)
+        imageDownloader?.delegate = self
+        imageDownloader?.downloadImage()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,5 +33,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var loadingLabel: UILabel!
+    
+    func didFinishDownload(_ sender: ImageDownloader) {
+        imageView.image = sender.image
+        imageView.isHidden = false
+        activityIndicator.isHidden = true
+        loadingLabel.isHidden = false
+        loadingLabel.text = "Un satélite."
+    }
+    
 }
 

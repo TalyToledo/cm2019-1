@@ -12,11 +12,10 @@ import UIKit
 class ImageDownloader {
     var imageUrl: String
     var image: UIImage?
-    var view: ViewController
+    var delegate: ImageDownloaderDelegate?
     
-    init(imageUrl: String, view: ViewController) {
+    init(imageUrl: String) {
         self.imageUrl = imageUrl
-        self.view = view
     }
     
     func downloadImage (){
@@ -27,11 +26,19 @@ class ImageDownloader {
                 let imageData = NSData(contentsOf: imageURLUnwrapped),
                 let image = UIImage(data: imageData as Data)
             else{return}
+            self.image = image
+            print("Image has been downloaded and set on instance")
+            DispatchQueue.main.async {
+                self.didDownloadImage()
+            }
         }
         
     }
     
     func didDownloadImage() {
         // Lo que se hace una vez que se bajo
+        print("How are changes made in the properties of the ViewController")
+        delegate?.didFinishDownload(self)
+
     }
 }

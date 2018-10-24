@@ -15,6 +15,7 @@
 		AC37A92E217E4198001C8E1B /* DelegadosImagenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A92D217E4198001C8E1B /* DelegadosImagenTests.swift */; };
 		AC37A939217E4199001C8E1B /* DelegadosImagenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A938217E4199001C8E1B /* DelegadosImagenUITests.swift */; };
 		AC37A947217E4456001C8E1B /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A946217E4456001C8E1B /* ImageDownloader.swift */; };
+		ACF2B1012180E1DA0063B92F /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF2B1002180E1DA0063B92F /* ImageDownloaderDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AC37A938217E4199001C8E1B /* DelegadosImagenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegadosImagenUITests.swift; sourceTree = "<group>"; };
 		AC37A93A217E4199001C8E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC37A946217E4456001C8E1B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		ACF2B1002180E1DA0063B92F /* ImageDownloaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				AC37A91F217E4198001C8E1B /* Assets.xcassets */,
 				AC37A921217E4198001C8E1B /* LaunchScreen.storyboard */,
 				AC37A924217E4198001C8E1B /* Info.plist */,
+				ACF2B1002180E1DA0063B92F /* ImageDownloaderDelegate.swift */,
 			);
 			path = DelegadosImagen;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC37A91B217E4196001C8E1B /* ViewController.swift in Sources */,
+				ACF2B1012180E1DA0063B92F /* ImageDownloaderDelegate.swift in Sources */,
 				AC37A947217E4456001C8E1B /* ImageDownloader.swift in Sources */,
 				AC37A919217E4196001C8E1B /* AppDelegate.swift in Sources */,
 			);
