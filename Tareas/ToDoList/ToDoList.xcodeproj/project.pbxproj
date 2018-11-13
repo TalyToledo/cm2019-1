@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC25EBD5218D673F00DBA7EB /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25EBD4218D673F00DBA7EB /* ToDoViewController.swift */; };
 		EC46FE6D217BE46800A73131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46FE6C217BE46800A73131 /* AppDelegate.swift */; };
 		EC46FE72217BE46800A73131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC46FE70217BE46800A73131 /* Main.storyboard */; };
 		EC46FE74217BE46F00A73131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC46FE73217BE46F00A73131 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC25EBD4218D673F00DBA7EB /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		EC46FE69217BE46800A73131 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC46FE6C217BE46800A73131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC46FE71217BE46800A73131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				EC46FE6C217BE46800A73131 /* AppDelegate.swift */,
 				EC46FE70217BE46800A73131 /* Main.storyboard */,
 				EC46FE9A217BE5E400A73131 /* ToDo.swift */,
+				EC25EBD4218D673F00DBA7EB /* ToDoViewController.swift */,
 				EC46FE73217BE46F00A73131 /* Assets.xcassets */,
 				EC46FE75217BE46F00A73131 /* LaunchScreen.storyboard */,
 				EC46FE78217BE46F00A73131 /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC25EBD5218D673F00DBA7EB /* ToDoViewController.swift in Sources */,
 				EC46FE6D217BE46800A73131 /* AppDelegate.swift in Sources */,
 				EC46FE9F217BE72C00A73131 /* TableViewController.swift in Sources */,
 				EC46FE9B217BE5E400A73131 /* ToDo.swift in Sources */,
