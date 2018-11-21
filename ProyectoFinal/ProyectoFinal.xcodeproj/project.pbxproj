@@ -14,6 +14,7 @@
 		ACF8261B219B37A0004875B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF82619219B37A0004875B2 /* LaunchScreen.storyboard */; };
 		ACF82626219B37A0004875B2 /* ProyectoFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82625219B37A0004875B2 /* ProyectoFinalTests.swift */; };
 		ACF82631219B37A0004875B2 /* ProyectoFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82630219B37A0004875B2 /* ProyectoFinalUITests.swift */; };
+		EC760EAE21A6130600474F84 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760EAD21A6130600474F84 /* RecipeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ACF8262C219B37A0004875B2 /* ProyectoFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF82630219B37A0004875B2 /* ProyectoFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinalUITests.swift; sourceTree = "<group>"; };
 		ACF82632219B37A0004875B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC760EAD21A6130600474F84 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,8 @@
 		ACF8260F219B379F004875B2 /* ProyectoFinal */ = {
 			isa = PBXGroup;
 			children = (
+				EC760EAC21A612EA00474F84 /* Controllers */,
+				EC760EAB21A612E200474F84 /* Models */,
 				ACF82610219B379F004875B2 /* AppDelegate.swift */,
 				ACF82612219B379F004875B2 /* ViewController.swift */,
 				ACF82614219B379F004875B2 /* Main.storyboard */,
@@ -123,6 +127,21 @@
 				ACF82632219B37A0004875B2 /* Info.plist */,
 			);
 			path = ProyectoFinalUITests;
+			sourceTree = "<group>";
+		};
+		EC760EAB21A612E200474F84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC760EAD21A6130600474F84 /* RecipeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC760EAC21A612EA00474F84 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +277,7 @@
 			files = (
 				ACF82613219B379F004875B2 /* ViewController.swift in Sources */,
 				ACF82611219B379F004875B2 /* AppDelegate.swift in Sources */,
+				EC760EAE21A6130600474F84 /* RecipeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
