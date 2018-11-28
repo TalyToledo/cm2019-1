@@ -15,6 +15,7 @@
 		ACF8261B219B37A0004875B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF82619219B37A0004875B2 /* LaunchScreen.storyboard */; };
 		ACF82626219B37A0004875B2 /* ProyectoFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82625219B37A0004875B2 /* ProyectoFinalTests.swift */; };
 		ACF82631219B37A0004875B2 /* ProyectoFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82630219B37A0004875B2 /* ProyectoFinalUITests.swift */; };
+		EC6B673F21AE40CB00CBFAC0 /* RecetaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B673E21AE40CB00CBFAC0 /* RecetaTableViewController.swift */; };
 		EC760EAE21A6130600474F84 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760EAD21A6130600474F84 /* RecipeModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		ACF8262C219B37A0004875B2 /* ProyectoFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF82630219B37A0004875B2 /* ProyectoFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinalUITests.swift; sourceTree = "<group>"; };
 		ACF82632219B37A0004875B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6B673E21AE40CB00CBFAC0 /* RecetaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaTableViewController.swift; sourceTree = "<group>"; };
 		EC760EAD21A6130600474F84 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */,
+				EC6B673E21AE40CB00CBFAC0 /* RecetaTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				ACF82613219B379F004875B2 /* ViewController.swift in Sources */,
 				ACF29B0B21A71EB80092D5A5 /* RecetaController.swift in Sources */,
+				EC6B673F21AE40CB00CBFAC0 /* RecetaTableViewController.swift in Sources */,
 				ACF82611219B379F004875B2 /* AppDelegate.swift in Sources */,
 				EC760EAE21A6130600474F84 /* RecipeModel.swift in Sources */,
 			);

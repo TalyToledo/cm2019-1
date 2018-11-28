@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qnz-AL-DMr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qnz-AL-DMr">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +25,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Dificultad"/>
                                 <connections>
-                                    <segue destination="17Q-dz-3qw" kind="show" id="W6H-kc-paQ"/>
+                                    <segue destination="17Q-dz-3qw" kind="show" identifier="showByDificulty" id="W6H-kc-paQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71y-1C-rtp">
@@ -33,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Tiempo de preparación"/>
                                 <connections>
-                                    <segue destination="17Q-dz-3qw" kind="show" id="65F-MP-u9e"/>
+                                    <segue destination="17Q-dz-3qw" kind="show" identifier="showByTime" id="65F-MP-u9e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-x6-7Bk">
@@ -42,7 +43,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="info"/>
                                 <connections>
-                                    <segue destination="xUD-Kp-ZJF" kind="show" id="AeW-9i-Cz8"/>
+                                    <segue destination="xUD-Kp-ZJF" kind="show" identifier="showInfo" id="AeW-9i-Cz8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJN-RE-u5K">
@@ -58,7 +59,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Tips"/>
                                 <connections>
-                                    <segue destination="cFN-o5-nPI" kind="show" id="UzP-0F-0xE"/>
+                                    <segue destination="cFN-o5-nPI" kind="show" identifier="showTips" id="UzP-0F-0xE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJm-Fv-KC7">
@@ -67,7 +68,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Todas las recetas"/>
                                 <connections>
-                                    <segue destination="17Q-dz-3qw" kind="show" id="2ge-HG-S1U"/>
+                                    <segue destination="17Q-dz-3qw" kind="show" identifier="showAll" id="2ge-HG-S1U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,13 +84,13 @@
         <!--Categoría-->
         <scene sceneID="HXO-WJ-Ts6">
             <objects>
-                <tableViewController id="17Q-dz-3qw" sceneMemberID="viewController">
+                <tableViewController id="17Q-dz-3qw" customClass="RecetaTableViewController" customModule="ProyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="opp-72-YvA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="jfM-9s-dgV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recetaCell" rowHeight="150" id="jfM-9s-dgV">
                                 <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jfM-9s-dgV" id="6rC-an-cTg">
@@ -98,6 +99,10 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iHr-Pl-giZ">
                                             <rect key="frame" x="16" y="10" width="157" height="129"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="129" id="BkC-Bt-KHJ"/>
+                                                <constraint firstAttribute="width" constant="157" id="l83-Gq-tQR"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAk-0z-rwf">
                                             <rect key="frame" x="198" y="33" width="43" height="21"/>
@@ -105,14 +110,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ver más..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyB-pa-WeZ">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver más..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyB-pa-WeZ">
                                             <rect key="frame" x="270" y="118" width="76" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ol-Ll-7aq">
-                                            <rect key="frame" x="242.99999999999997" y="64" width="57.666666666666657" height="21"/>
+                                            <rect key="frame" x="243" y="64" width="58" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -124,6 +129,7 @@
                                         <constraint firstItem="iHr-Pl-giZ" firstAttribute="top" secondItem="6rC-an-cTg" secondAttribute="top" constant="10" id="OjT-Ae-nrO"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="QAk-0z-rwf" secondAttribute="bottom" constant="85" id="T7E-h6-3pT"/>
                                         <constraint firstAttribute="trailing" secondItem="iHr-Pl-giZ" secondAttribute="trailing" constant="202" id="TtX-JY-NZu"/>
+                                        <constraint firstItem="fyB-pa-WeZ" firstAttribute="leading" secondItem="iHr-Pl-giZ" secondAttribute="trailing" constant="97" id="acC-Uj-nMj"/>
                                         <constraint firstItem="iHr-Pl-giZ" firstAttribute="leading" secondItem="6rC-an-cTg" secondAttribute="leading" constant="16" id="efQ-VY-FvZ"/>
                                         <constraint firstItem="QAk-0z-rwf" firstAttribute="leading" secondItem="iHr-Pl-giZ" secondAttribute="trailing" constant="25" id="ga6-eK-Edh"/>
                                         <constraint firstItem="QAk-0z-rwf" firstAttribute="top" secondItem="6rC-an-cTg" secondAttribute="topMargin" constant="22" id="lXm-Bs-pfh"/>
@@ -143,6 +149,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Categoría" id="bVa-VY-k0P"/>
+                    <connections>
+                        <outlet property="imagePlatillo" destination="iHr-Pl-giZ" id="NKS-ym-NnW"/>
+                        <outlet property="labelTime" destination="3Ol-Ll-7aq" id="Brd-wS-W9T"/>
+                        <outlet property="labelTitlePlatillo" destination="QAk-0z-rwf" id="gdk-u6-XA5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Vh-bV-uCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +168,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oD8-GT-F2P">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tipCell" id="oD8-GT-F2P">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oD8-GT-F2P" id="LGE-Ks-3Yt">
@@ -180,7 +191,6 @@
         <!--Receta-->
         <scene sceneID="jwR-xH-Fe4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hFO-yS-IJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="KX4-Kr-bLP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rRy-us-eZW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -221,13 +231,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Receta" id="K3W-U8-WhC"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFO-yS-IJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2935" y="134"/>
         </scene>
         <!--INFO-->
         <scene sceneID="Jx1-iV-tdP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uWm-3c-XfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="xUD-Kp-ZJF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0pT-t6-2Pv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -246,8 +256,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="INFO" id="pYk-U0-tzu"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWm-3c-XfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-106" y="901"/>
+            <point key="canvasLocation" x="12" y="901"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1LL-YK-Xi3">

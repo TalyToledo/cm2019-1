@@ -15,4 +15,6 @@ class RecipeController {
     static func fetchRecipe (search: String, completion: @escaping ([Receta]?)->Void){
         
     }
+    
+    
 }
