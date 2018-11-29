@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,62 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;The Recipe&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuB-Fz-Wf3">
+                                <rect key="frame" x="102" y="70" width="171" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XuB-Fz-Wf3" secondAttribute="height" multiplier="57:13" id="cda-xM-0Wv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cooking is fun..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azz-e0-r7F">
+                                <rect key="frame" x="98" y="422" width="179" height="58.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Azz-e0-r7F" secondAttribute="height" multiplier="89:29" id="Zoh-zh-UQf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RecipeTittle" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-5K-EXY">
+                                <rect key="frame" x="55" y="144" width="265" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gqx-5K-EXY" secondAttribute="height" multiplier="265:243" id="and-5E-v6i"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="w68-iW-Wkr">
+                                <rect key="frame" x="177" y="515.5" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w68-iW-Wkr" secondAttribute="height" multiplier="1:1" id="swF-z2-OZx"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98324123959999998" green="1" blue="0.71759401919999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gqx-5K-EXY" secondAttribute="trailing" constant="55" id="690-iM-OJN"/>
+                            <constraint firstItem="XuB-Fz-Wf3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="AZ2-Jk-Xsp"/>
+                            <constraint firstItem="XuB-Fz-Wf3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="B1L-Vg-wF2"/>
+                            <constraint firstItem="w68-iW-Wkr" firstAttribute="top" secondItem="Azz-e0-r7F" secondAttribute="bottom" constant="35" id="Fso-8j-n0I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XuB-Fz-Wf3" secondAttribute="trailing" constant="102" id="J0u-0P-n94"/>
+                            <constraint firstItem="gqx-5K-EXY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="Mvl-GH-MN2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w68-iW-Wkr" secondAttribute="trailing" constant="177" id="Pjv-L8-ZBd"/>
+                            <constraint firstItem="Azz-e0-r7F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="UWN-PP-fkl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Azz-e0-r7F" secondAttribute="trailing" constant="98" id="bYE-vC-w2q"/>
+                            <constraint firstItem="gqx-5K-EXY" firstAttribute="top" secondItem="XuB-Fz-Wf3" secondAttribute="bottom" constant="35" id="c0S-zt-oJU"/>
+                            <constraint firstItem="w68-iW-Wkr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="iA5-nM-Bcw"/>
+                            <constraint firstItem="Azz-e0-r7F" firstAttribute="top" secondItem="gqx-5K-EXY" secondAttribute="bottom" constant="35" id="rEs-0W-rVk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RecipeTittle" width="640" height="546"/>
+    </resources>
 </document>
