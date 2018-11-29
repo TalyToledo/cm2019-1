@@ -13,10 +13,9 @@ class RecipeController {
     
 
     static func leerDatos(recipes: Data){
-        //let response: Receta
+
         do{
             let response = try JSONDecoder().decode(Receta.self, from: recipes)
-            //print(response)
         }
         catch{
             print(error)
