@@ -10,13 +10,19 @@ import Foundation
 
 
 class RecipeController {
-    /*static var urlSession = URLSession(configuration: .default)
     
-    static func fetchRecipe (search: String, completion: @escaping ([Receta]?)->Void){
+
+    static func leerDatos(recipes: Data){
+        //let response: Receta
+        do{
+            let response = try JSONDecoder().decode(Receta.self, from: recipes)
+            //print(response)
+        }
+        catch{
+            print(error)
+        }
         
-    }*/
-    
-    let jsonWeb = "recipes.json"
-    
+    }
+
     
 }

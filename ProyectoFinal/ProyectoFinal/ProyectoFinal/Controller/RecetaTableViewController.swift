@@ -11,13 +11,32 @@ import UIKit
 class RecetaTableViewController: UITableViewController {
     
     var selectedCategory = 0
+    let recipes = """
+{"title": "The Best Fried Rice", "readyInMinutes" : "30", "cuisine": "Asian", "dificulty":"easy", "ingredients":
+[{"name":"chicken broth", "amount":"2", "units": "cups"},
+{"name":"dried chives", "amount":"1", "units": "tablespoons"},
+{"name":"eggs", "amount":"2", "units": ""},
+{"name":"frozen corn", "amount":"0.6666", "units": "cup"},
+{"name":"garlic", "amount":"1", "units": "clove"},
+{"name":"olive oil", "amount":"2", "units": "tablespoons"},
+{"name":"peas", "amount":"0.6666", "units": "cup"},
+{"name":"red onion", "amount":"0.5", "units": ""},
+{"name":"red pepper flakes", "amount":"1", "units": "pinch"},
+{"name":"salt", "amount":"4", "units": "servings"},
+{"name":"sesame oil", "amount":"1.5", "units": "tablespoons"},
+{"name":"soy sauce", "amount":"0.25", "units": "cup"},
+{"name":"white rice", "amount":"1", "units": "cup"}],
+"steps":[ "In medium saucepan, measure and pour rice, chicken broth and salt. Cover and bring to boil, then reduce to simmer. Cook until rice is tender, 15-18 minutes.",
+"Remove from heat.In large skillet, heat oil over medium high heat.",
+"Saute onion, garlic, peas and corn for about 5 minutes or until onions start to become tender. Push veggies over to one side, crack eggs into pan and scramble.",
+"Pour in cooked rice, sesame oil, soy sauce and red pepper flakes and dried chives. Stir to heat through and serve warm."]}
+""".data(using: .utf8)!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
+        RecipeController.leerDatos(recipes: recipes)
     }
 
     override func didReceiveMemoryWarning() {
