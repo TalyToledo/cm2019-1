@@ -15,8 +15,10 @@
 		ACF8261B219B37A0004875B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF82619219B37A0004875B2 /* LaunchScreen.storyboard */; };
 		ACF82626219B37A0004875B2 /* ProyectoFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82625219B37A0004875B2 /* ProyectoFinalTests.swift */; };
 		ACF82631219B37A0004875B2 /* ProyectoFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82630219B37A0004875B2 /* ProyectoFinalUITests.swift */; };
+		EC20C21521AF2127001CEDEC /* RecetaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC20C21421AF2127001CEDEC /* RecetaTableViewCell.swift */; };
 		EC6B673F21AE40CB00CBFAC0 /* RecetaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B673E21AE40CB00CBFAC0 /* RecetaTableViewController.swift */; };
 		EC760EAE21A6130600474F84 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760EAD21A6130600474F84 /* RecipeModel.swift */; };
+		ECC4280821AF300A0004BED6 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = ECC4280721AF300A0004BED6 /* recipes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,10 @@
 		ACF8262C219B37A0004875B2 /* ProyectoFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF82630219B37A0004875B2 /* ProyectoFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinalUITests.swift; sourceTree = "<group>"; };
 		ACF82632219B37A0004875B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC20C21421AF2127001CEDEC /* RecetaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaTableViewCell.swift; sourceTree = "<group>"; };
 		EC6B673E21AE40CB00CBFAC0 /* RecetaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaTableViewController.swift; sourceTree = "<group>"; };
 		EC760EAD21A6130600474F84 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		ECC4280721AF300A0004BED6 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recipes.json; path = ../../../recipes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			children = (
 				ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */,
 				EC6B673E21AE40CB00CBFAC0 /* RecetaTableViewController.swift */,
+				EC20C21421AF2127001CEDEC /* RecetaTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 				ACF82610219B379F004875B2 /* AppDelegate.swift */,
 				ACF82612219B379F004875B2 /* ViewController.swift */,
 				ACF82614219B379F004875B2 /* Main.storyboard */,
+				ECC4280721AF300A0004BED6 /* recipes.json */,
 				ACF82617219B37A0004875B2 /* Assets.xcassets */,
 				ACF82619219B37A0004875B2 /* LaunchScreen.storyboard */,
 				ACF8261C219B37A0004875B2 /* Info.plist */,
@@ -257,6 +263,7 @@
 				ACF8261B219B37A0004875B2 /* LaunchScreen.storyboard in Resources */,
 				ACF82618219B37A0004875B2 /* Assets.xcassets in Resources */,
 				ACF82616219B379F004875B2 /* Main.storyboard in Resources */,
+				ECC4280821AF300A0004BED6 /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +291,7 @@
 				ACF82613219B379F004875B2 /* ViewController.swift in Sources */,
 				ACF29B0B21A71EB80092D5A5 /* RecetaController.swift in Sources */,
 				EC6B673F21AE40CB00CBFAC0 /* RecetaTableViewController.swift in Sources */,
+				EC20C21521AF2127001CEDEC /* RecetaTableViewCell.swift in Sources */,
 				ACF82611219B379F004875B2 /* AppDelegate.swift in Sources */,
 				EC760EAE21A6130600474F84 /* RecipeModel.swift in Sources */,
 			);
@@ -462,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProyectoFinal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,6 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProyectoFinal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
