@@ -25,8 +25,10 @@ class RecetaTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }*/
     
-    static func setCell(platillo: Receta){
-        
+    func setCell(platillo: Receta){
+        //platilloImagen.image =
+        titlePlatilloLabel.text = platillo.titulo
+        timePlatilloLabel.text = platillo.tiempoEnMinutos
     }
 
 }

@@ -13,6 +13,9 @@ class RecetaTableViewController: UITableViewController {
     var selectedCategory = 0
     var datosReceta: [Receta]?
     
+    @IBOutlet weak var platilloImagen: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +59,7 @@ class RecetaTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recetaCell", for: indexPath)
 
         // Configure the cell...
-        //let currentPlatillo = datosReceta![indexPath.row]
-        
+        let currentPlatillo = datosReceta![indexPath.row]
         
 
         return cell
