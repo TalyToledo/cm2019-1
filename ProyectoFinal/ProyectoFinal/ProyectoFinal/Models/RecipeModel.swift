@@ -27,16 +27,6 @@ struct Receta: Codable {
         case ingredientes = "ingredients"
     }
     
-    /*init(from decoder: Decoder) throws {
-     let values = try decoder.container(keyedBy: CodingKeys.self)
-     titulo = try values.decode(String.self, forKey: CodingKeys.titulo)
-     ingredientes = try values.decode([Ingrediente].self, forKey: CodingKeys.ingredientes)
-     pasos = try values.decode([String].self, forKey: CodingKeys.pasos)
-     tiempoEnMinutos = try values.decode(Int.self, forKey: CodingKeys.tiempoEnMinutos)
-     tipoCocina = try values.decode(String.self, forKey: CodingKeys.tipoCocina)
-     dificultad = try values.decode(String.self, forKey: CodingKeys.dificultad)
-     }*/
-    
 }
 
 struct Ingrediente: Codable {
@@ -49,13 +39,6 @@ struct Ingrediente: Codable {
         case cantidad = "amount"
         case unidades = "units"
     }
-    
-    /*init (from decoder: Decoder) throws {
-     let values = try decoder.container(keyedBy: CodingKeys.self)
-     nombre = try values.decode(String.self, forKey: CodingKeys.nombre)
-     cantidad = try values.decode(Float.self, forKey: CodingKeys.cantidad)
-     unidades = try values.decode(String.self, forKey: CodingKeys.unidades)
-     }*/
 }
 
 

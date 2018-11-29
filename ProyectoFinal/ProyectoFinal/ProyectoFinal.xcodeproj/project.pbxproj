@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACEAE5A921B06F9A003B804B /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEAE5A821B06F9A003B804B /* recipes.json */; };
 		ACF29B0B21A71EB80092D5A5 /* RecetaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */; };
 		ACF82611219B379F004875B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82610219B379F004875B2 /* AppDelegate.swift */; };
 		ACF82613219B379F004875B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82612219B379F004875B2 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACEAE5A821B06F9A003B804B /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recipes.json; path = "../../../../Downloads/cm2019-1-master/JSONRequest/recipes.json"; sourceTree = "<group>"; };
 		ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaController.swift; sourceTree = "<group>"; };
 		ACF8260D219B379F004875B2 /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF82610219B379F004875B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				ACF82617219B37A0004875B2 /* Assets.xcassets */,
 				ACF82619219B37A0004875B2 /* LaunchScreen.storyboard */,
 				ACF8261C219B37A0004875B2 /* Info.plist */,
+				ACEAE5A821B06F9A003B804B /* recipes.json */,
 			);
 			path = ProyectoFinal;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				ACF8261B219B37A0004875B2 /* LaunchScreen.storyboard in Resources */,
 				ACF82618219B37A0004875B2 /* Assets.xcassets in Resources */,
 				ACF82616219B379F004875B2 /* Main.storyboard in Resources */,
+				ACEAE5A921B06F9A003B804B /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

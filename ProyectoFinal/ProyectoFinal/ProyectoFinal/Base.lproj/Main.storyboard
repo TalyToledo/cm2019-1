@@ -137,7 +137,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="platilloImage" destination="iHr-Pl-giZ" id="dlA-5p-3kL"/>
+                                    <outlet property="platilloImagen" destination="iHr-Pl-giZ" id="FWa-5A-muV"/>
                                     <outlet property="timePlatilloLabel" destination="3Ol-Ll-7aq" id="oBY-id-uCU"/>
                                     <outlet property="titlePlatilloLabel" destination="QAk-0z-rwf" id="LOG-NC-m0t"/>
                                     <segue destination="KX4-Kr-bLP" kind="show" id="xLf-2u-Axq"/>

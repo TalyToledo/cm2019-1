@@ -10,7 +10,7 @@ import UIKit
 
 class RecetaTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var platilloImage: UIImageView!
+    @IBOutlet weak var platilloImagen: UIImageView!
     @IBOutlet weak var titlePlatilloLabel: UILabel!
     @IBOutlet weak var timePlatilloLabel: UILabel!
     
@@ -25,10 +25,8 @@ class RecetaTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }*/
     
-    func setCell(platillo: Receta){
-        platilloImage.image = #imageLiteral(resourceName: "imagenReceta")
-        titlePlatilloLabel.text = platillo.titulo
-        timePlatilloLabel.text = String(platillo.tiempoEnMinutos)
+    static func setCell(platillo: Receta){
+        
     }
 
 }
