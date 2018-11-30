@@ -151,6 +151,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Categoría" id="bVa-VY-k0P"/>
+                    <connections>
+                        <outlet property="categoriaNavigationItem" destination="bVa-VY-k0P" id="tcz-yh-8bC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Vh-bV-uCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

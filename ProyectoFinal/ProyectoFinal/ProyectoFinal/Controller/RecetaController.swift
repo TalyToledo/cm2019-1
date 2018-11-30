@@ -12,6 +12,7 @@ import Foundation
 class RecipeController {
   
     static func loadJson(filename fileName: String) -> [Receta]? {
+        
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
@@ -22,7 +23,7 @@ class RecipeController {
                 debugPrint(jsonData)
                 return baseRecetas
             } catch {
-                print("error:\(error)")
+                debugPrint("error:\(error)")
             }
         }
         return nil

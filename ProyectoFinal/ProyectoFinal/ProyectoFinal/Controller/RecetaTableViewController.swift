@@ -13,13 +13,11 @@ class RecetaTableViewController: UITableViewController {
     var selectedCategory = 0
     var datosReceta: [Receta]?
     
-    @IBOutlet weak var platilloImagen: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var categoriaNavigationItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datosReceta = RecipeController.loadJson(filename: "recipes")
+        datosReceta = RecipeController.loadJson(filename: "recipes.json")
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,19 +45,24 @@ class RecetaTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "showAll"{
             selectedCategory = 1
+            categoriaNavigationItem.title = "Todas las Recetas"
         } else if segue.identifier == "showByDificulty"{
             selectedCategory = 2
+            categoriaNavigationItem.title = "Por Dificultad"
         } else if segue.identifier == "showByTime"{
             selectedCategory = 3
+            categoriaNavigationItem.title = "Por tiempo"
         }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "recetaCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recetaCell", for: indexPath) as! RecetaTableViewCell
 
         // Configure the cell...
         let currentPlatillo = datosReceta![indexPath.row]
+        
+        cell.setCell(platillo: currentPlatillo)
         
 
         return cell
