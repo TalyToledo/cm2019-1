@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC0160EE21B1A458005B4268 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = AC0160ED21B1A458005B4268 /* recipes.json */; };
+		AC0160F221B1DD2F005B4268 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = AC0160F121B1DD2F005B4268 /* recipes.json */; };
 		AC062A3D21B1AE5600D502C0 /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC062A3C21B1AE5600D502C0 /* TipsTableViewController.swift */; };
 		AC062A3F21B1B20E00D502C0 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC062A3E21B1B20E00D502C0 /* TipsViewController.swift */; };
 		ACF29B0B21A71EB80092D5A5 /* RecetaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */; };
@@ -41,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC0160ED21B1A458005B4268 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = SOURCE_ROOT; };
+		AC0160F121B1DD2F005B4268 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		AC062A3C21B1AE5600D502C0 /* TipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
 		AC062A3E21B1B20E00D502C0 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaController.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				ACF82612219B379F004875B2 /* ViewController.swift */,
 				ACF82614219B379F004875B2 /* Main.storyboard */,
 				ACF82617219B37A0004875B2 /* Assets.xcassets */,
-				AC0160ED21B1A458005B4268 /* recipes.json */,
+				AC0160F121B1DD2F005B4268 /* recipes.json */,
 				ACF82619219B37A0004875B2 /* LaunchScreen.storyboard */,
 				ACF8261C219B37A0004875B2 /* Info.plist */,
 			);
@@ -269,7 +269,7 @@
 				ACF8261B219B37A0004875B2 /* LaunchScreen.storyboard in Resources */,
 				ACF82618219B37A0004875B2 /* Assets.xcassets in Resources */,
 				ACF82616219B379F004875B2 /* Main.storyboard in Resources */,
-				AC0160EE21B1A458005B4268 /* recipes.json in Resources */,
+				AC0160F221B1DD2F005B4268 /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProyectoFinal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProyectoFinal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -12,13 +12,13 @@ class RecetaTableViewController: UITableViewController {
     
     var selectedCategory = 0
     var datosReceta: [Receta] = []
-    var nameOfFile: String = "recipes.json"
+    var nameOfFile: String = "recipes"
     
     @IBOutlet weak var categoriaNavigationItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datosReceta = RecipeController.loadJson(fileName: nameOfFile)
+        datosReceta = RecipeController.loadJson(filename: nameOfFile)!
         debugPrint(datosReceta)
     }
 
