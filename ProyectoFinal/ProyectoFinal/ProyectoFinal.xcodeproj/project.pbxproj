@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AC0160EE21B1A458005B4268 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = AC0160ED21B1A458005B4268 /* recipes.json */; };
+		AC062A3D21B1AE5600D502C0 /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC062A3C21B1AE5600D502C0 /* TipsTableViewController.swift */; };
+		AC062A3F21B1B20E00D502C0 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC062A3E21B1B20E00D502C0 /* TipsViewController.swift */; };
 		ACF29B0B21A71EB80092D5A5 /* RecetaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */; };
 		ACF82611219B379F004875B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82610219B379F004875B2 /* AppDelegate.swift */; };
 		ACF82613219B379F004875B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82612219B379F004875B2 /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		AC0160ED21B1A458005B4268 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = SOURCE_ROOT; };
+		AC062A3C21B1AE5600D502C0 /* TipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
+		AC062A3E21B1B20E00D502C0 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaController.swift; sourceTree = "<group>"; };
 		ACF8260D219B379F004875B2 /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF82610219B379F004875B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */,
 				EC6B673E21AE40CB00CBFAC0 /* RecetaTableViewController.swift */,
 				EC20C21421AF2127001CEDEC /* RecetaTableViewCell.swift */,
+				AC062A3C21B1AE5600D502C0 /* TipsTableViewController.swift */,
+				AC062A3E21B1B20E00D502C0 /* TipsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -290,8 +296,10 @@
 			files = (
 				ACF82613219B379F004875B2 /* ViewController.swift in Sources */,
 				ACF29B0B21A71EB80092D5A5 /* RecetaController.swift in Sources */,
+				AC062A3F21B1B20E00D502C0 /* TipsViewController.swift in Sources */,
 				EC6B673F21AE40CB00CBFAC0 /* RecetaTableViewController.swift in Sources */,
 				EC20C21521AF2127001CEDEC /* RecetaTableViewCell.swift in Sources */,
+				AC062A3D21B1AE5600D502C0 /* TipsTableViewController.swift in Sources */,
 				ACF82611219B379F004875B2 /* AppDelegate.swift in Sources */,
 				EC760EAE21A6130600474F84 /* RecipeModel.swift in Sources */,
 			);
