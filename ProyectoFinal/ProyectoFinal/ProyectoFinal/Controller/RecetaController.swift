@@ -11,34 +11,23 @@ import Foundation
 
 class RecipeController {
   
-    static func loadJson(filename fileName: String) -> [Receta]? {
+    static func loadJson(fileName: String) -> [Receta] {
+        var baseRecetas: [Receta] = []
         
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
                 let jsonData = try decoder.decode(Receta.self, from: data)
-                var baseRecetas: [Receta] = []
                 baseRecetas.append(jsonData)
                 debugPrint(jsonData)
-                return baseRecetas
+                
             } catch {
                 debugPrint("error:\(error)")
-            }
+                }
+            //onSuccess(baseRecetas)
+            
         }
-        return nil
+        return baseRecetas
     }
-    
-    /*static func leerDatos(recipes: Data){
-
-        do{
-            let response = try JSONDecoder().decode(Receta.self, from: recipes)
-        }
-        catch{
-            print(error)
-        }
-        
-    }*/
-
-    
 }

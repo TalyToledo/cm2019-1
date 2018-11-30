@@ -11,13 +11,15 @@ import UIKit
 class RecetaTableViewController: UITableViewController {
     
     var selectedCategory = 0
-    var datosReceta: [Receta]?
+    var datosReceta: [Receta] = []
+    var nameOfFile: String = "recipes.json"
     
     @IBOutlet weak var categoriaNavigationItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datosReceta = RecipeController.loadJson(filename: "recipes.json")
+        datosReceta = RecipeController.loadJson(fileName: nameOfFile)
+        debugPrint(datosReceta)
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,7 +62,7 @@ class RecetaTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recetaCell", for: indexPath) as! RecetaTableViewCell
 
         // Configure the cell...
-        let currentPlatillo = datosReceta![indexPath.row]
+        let currentPlatillo = datosReceta[indexPath.row]
         
         cell.setCell(platillo: currentPlatillo)
         
