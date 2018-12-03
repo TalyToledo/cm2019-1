@@ -15,7 +15,7 @@ class RecipeController {
     static func loadJson(filename fileName: String, onSucces: @escaping ([Receta]) -> Void) {
         
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else{return}
-        let dataTask = urlSession.dataTask(with: url){
+        _ = urlSession.dataTask(with: url){_,_,_ in
             
         }
         

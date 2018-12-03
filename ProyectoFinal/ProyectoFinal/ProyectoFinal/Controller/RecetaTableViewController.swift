@@ -18,7 +18,7 @@ class RecetaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datosReceta = RecipeController.loadJson(filename: nameOfFile)!
+        datosReceta = RecipeController.loadJson(filename: "recipies.json")!
         debugPrint(datosReceta)
     }
 

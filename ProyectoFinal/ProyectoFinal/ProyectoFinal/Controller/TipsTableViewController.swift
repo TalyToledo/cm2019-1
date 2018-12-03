@@ -9,7 +9,12 @@
 import UIKit
 
 var tips = ["Tip 1","Tip 2","Tip 3","Tip 4","Tip 5"]
-var tipDescripcion = ["Saltea algusto","Echale sal de apoco hasta tener un buen sabor","Cocona feliz nunca enojado","Usa guantes y mandil al cocinar con cosas calientes","Nunca nunca nunca eches agua al aceite caliente"]
+var tipDescripcion = [
+    "Para comprobar si el huevo que tenía almacenado aún es fresco, agrega a un vaso con agua una cucharadita de sal, disuélvela bien y coloca el huevo, si se va al fondo significa que está fresco, pero si flota quiere decir que ya no se puede consumir.",
+    "Reutiliza los envases y recipientes de yogurt y mantequilla para guardar y congelar sobrantes de comida o úsalos como moldes para gelatinas.",
+    "Usa guantes y mandil al cocinar con cosas calientes, ten cuidado al usar cuchillos para rebanar fruta o carne, tambien toma precauciones al abrir alimentos enlatados",
+    "Los alimentos congelados deben deshielarse en el refrigerador, el microondas o colocar el paquete envuelto en agua fría. No lo dejes sobre superficies a temperatura ambiente, porque las bacterias se reproducen rápidamente.",
+    "Cubre las ensaladas y verduras frescas con agua fría hasta el momento en que las sirvas. Se conservarán frescas y crujientes"]
 
 var myIndex = 0
 
