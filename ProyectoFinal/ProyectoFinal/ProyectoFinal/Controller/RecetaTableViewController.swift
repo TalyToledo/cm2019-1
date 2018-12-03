@@ -11,15 +11,18 @@ import UIKit
 class RecetaTableViewController: UITableViewController {
     
     var selectedCategory = 0
-    var datosReceta: [Receta] = []
+    var datosReceta: Recipes!
+    /*init(datosReceta: Recipes){
+        self.datosReceta = datosReceta
+    }*/
     var nameOfFile: String = "recipes"
     
     @IBOutlet weak var categoriaNavigationItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datosReceta = RecipeController.loadJson(filename: "recipies.json")!
-        debugPrint(datosReceta)
+        downloadRecipes()
+        //debugPrint(datosReceta)
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,13 +65,22 @@ class RecetaTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recetaCell", for: indexPath) as! RecetaTableViewCell
 
         // Configure the cell...
-        let currentPlatillo = datosReceta[indexPath.row]
+        let currentPlatillo = datosReceta!.data[indexPath.row]
         
         cell.setCell(platillo: currentPlatillo)
         
 
         return cell
     }
+    
+    func downloadRecipes(){
+        RecipeController.loadJson(fileName: nameOfFile) { (result) in
+            self.datosReceta = result
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        }
     
     
     

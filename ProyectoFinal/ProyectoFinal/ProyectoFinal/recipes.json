@@ -1,4 +1,4 @@
-{"recipes": [
+{"recipes":[
 {"title": "The Best Fried Rice", "readyInMinutes" : "30", "cuisine": "Asian", "dificulty":"easy", "ingredients":
  [{"name":"chicken broth", "amount":"2", "units": "cups"},
 {"name":"dried chives", "amount":"1", "units": "tablespoons"},

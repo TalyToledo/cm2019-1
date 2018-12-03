@@ -26,9 +26,10 @@ class RecetaTableViewCell: UITableViewCell {
     }*/
     
     func setCell(platillo: Receta){
-        platilloImagen.image = UIImage.init(contentsOfFile: "imagenReceta.jpg")
+        //platilloImagen.image = UIImage.init(contentsOfFile: "imagenReceta.jpg")
         titlePlatilloLabel.text = platillo.titulo
         timePlatilloLabel.text = platillo.tiempoEnMinutos
+        //platilloImagen.image = UIImage.init(imageLiteralResourceName: "imagenReceta.jpg")
     }
 
 }

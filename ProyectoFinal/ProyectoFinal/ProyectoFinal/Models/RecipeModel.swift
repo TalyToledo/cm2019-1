@@ -8,6 +8,20 @@
 
 import Foundation
 
+struct Recipes: Codable{
+    let data: [Receta]
+    
+    enum CodingKeys: String, CodingKey{
+        case data = "recipes"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        data = try values.decode([Receta].self, forKey: CodingKeys.data)
+    }
+    //static func
+}
+
 struct Receta: Codable {
     var titulo: String
     var tiempoEnMinutos: String
@@ -16,7 +30,7 @@ struct Receta: Codable {
     var ingredientes: [Ingrediente]
     var pasos: [String]
     
-    /*enum CodingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case titulo = "title"
         case tiempoEnMinutos = "readyInMinutes"
         case tipoCocina = "cuisine"
@@ -24,13 +38,13 @@ struct Receta: Codable {
         case ingredientes = "ingredients"
         case pasos = "steps"
         
-    }*/
+    }
     
-    static func create(dict: NSDictionary) -> Receta? {
+    /*static func create(dict: NSDictionary) -> Receta? {
         guard let titulo = dict["title"] as? String, let tiempoEnMinutos = dict["readyInMinutes"] as? String, let tipoCocina = dict["cuisine"] as? String, let dificultad = dict["dificulty"] as? String, let ingredientes = dict["ingredients"] as? [Ingrediente], let pasos = dict["steps"] as? [String]
             else{return nil}
         return Receta(titulo: titulo, tiempoEnMinutos: tiempoEnMinutos, tipoCocina: tipoCocina, dificultad: dificultad, ingredientes: ingredientes, pasos: pasos)
-    }
+    }*/
     
 }
 
@@ -44,6 +58,9 @@ struct Ingrediente: Codable {
         case cantidad = "amount"
         case unidades = "units"
     }
+    
+    
+    
 }
 
 

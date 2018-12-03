@@ -10,35 +10,50 @@ import Foundation
 
 
 class RecipeController {
-  static var urlSession = URLSession(configuration: .default)
+  //static var urlSession = URLSession(configuration: .default)
     
-    static func loadJson(filename fileName: String, onSucces: @escaping ([Receta]) -> Void) {
+    static func loadJson(fileName: String, onSucces: @escaping (Recipes) -> Void) {
         
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else{return}
-        _ = urlSession.dataTask(with: url){_,_,_ in
-            
+        
+        /*let dataTask = urlSession.dataTask(with: url){ data, response, error in
+            if let error = error {
+                debugPrint("Error in dataTask: \(error.localizedDescription)")
+                return
+            }
+            /*guard let httpResponse = response as? HTTPURLResponse, (200 ... 299).contains(httpResponse.statusCode) else{
+                debugPrint("Error in httpResponse, code out of range")
+                return
+            }*/
+            guard let data = data, let json = parseData(data: data) else{return}
+            if let allRecipes = createRecipeArray(jsonNSDictionary: json){
+                onSucces(allRecipes)
+            } else{
+                debugPrint("Can't create recipes array")
+            }
         }
+        dataTask.resume()*/
+        guard let data = try? Data(contentsOf: url, options: .mappedIfSafe)/*, let json = parseData(data: data)*/ else{return}
+        guard let recipeList = try? JSONDecoder().decode(Recipes.self, from: data) else{
+            debugPrint("Can't decode")
+            return
+        }
+        onSucces(recipeList)
+
         
-        /*guard let data = try Data(contentsOf: url, options: .mappedIfSafe), let json = parseData(data: data) else{return}*/
         
-        /*if let recetas = createRecipeArray(jsonNSDictionary: json){
-            onSucces(recetas)
-        }else {
-            debugPrint("No se puede crear el arreglo de recetas")
-        }*/
     }
     
-    static func parseData(data: Data) -> NSDictionary? {
-        let json = try? JSONSerialization.jsonObject(with: data, options: [])
-        let jsonNSDictionary = json as? NSDictionary
+    /*static func parseData(data: Data) -> NSDictionary? {
+        let json = try? JSONSerialization.jsonObject(with: data, options: []), jsonNSDictionary = json as? NSDictionary
         return jsonNSDictionary
-    }
+    }*/
     
-    static func createRecipeArray(jsonNSDictionary: NSDictionary) -> [Receta]?{
+    /*static func createRecipeArray(jsonNSDictionary: NSDictionary) -> [Receta]?{
         guard let results = jsonNSDictionary["recipes"], let resultNSDictionary = results as? [NSDictionary] else {return nil}
         var todasRecetas: [Receta] = []
         for dataResults in resultNSDictionary {
-            if let unaReceta = Receta.create(dict: dataResults) {
+            if let unaReceta  {
                 todasRecetas.append(unaReceta)
             }
             else{
@@ -46,5 +61,5 @@ class RecipeController {
             }
         }
         return (todasRecetas.count > 0 ? todasRecetas: nil)
-    }
+    }*/
 }
