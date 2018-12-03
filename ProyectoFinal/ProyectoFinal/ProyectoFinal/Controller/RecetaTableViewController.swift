@@ -8,23 +8,18 @@
 
 import UIKit
 
-class RecetaTableViewController: UITableViewController, RecetaControllerDelegate{
-    func didSelectReceta(controller: UITableViewController, unaReceta: [Receta]) {
-        self.datosReceta = unaReceta
-    }
+class RecetaTableViewController: UITableViewController{
     
-
-    var delegate: RecetaControllerDelegate! = nil
+    //var delegate: RecetaControllerDelegate! = nil
     var selectedCategory = 0
     var datosReceta: [Receta] = []
-    var nameOfFile: String = "recipes"
+    var clasifRecetas: [[Receta]] = [[]]
+    var seleccion: Receta?
     
     @IBOutlet weak var categoriaNavigationItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datosReceta = RecipeController.getInfo()
-        //debugPrint(datosReceta)
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,26 +35,25 @@ class RecetaTableViewController: UITableViewController, RecetaControllerDelegate
         } else if selectedCategory == 3 {
             return 5
         }
-        else {return 0}*/
+        else {return 1}*/
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        /*if selectedCategory == 1{
+            return datosReceta.count}
+        if selectedCategory == 2{
+            return clasifRecetas[section].count
+        }*/
         return datosReceta.count
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Pass the selected object to the new view controller.
-        if segue.identifier == "showAll"{
-            selectedCategory = 1
-            categoriaNavigationItem.title = "Todas las Recetas"
-        } else if segue.identifier == "showByDificulty"{
-            selectedCategory = 2
-            categoriaNavigationItem.title = "Por Dificultad"
-        } else if segue.identifier == "showByTime"{
-            selectedCategory = 3
-            categoriaNavigationItem.title = "Por tiempo"
+        if segue.identifier == "segueShow"{
+            let vc = segue.destination as! RecetaShowViewController
+            vc.selectedRecipe = seleccion
         }
     }
 
@@ -72,8 +66,24 @@ class RecetaTableViewController: UITableViewController, RecetaControllerDelegate
         
         cell.setCell(platillo: currentPlatillo)
         
+        /*switch selectedCategory {
+        case 2,3:
+            for array in clasifRecetas{
+                let current = array[indexPath.section]
+                cell.setCell(platillo: current)
+            }
+        default:
+            let currentPlatillo = datosReceta[indexPath.row]
+            cell.setCell(platillo: currentPlatillo)
+        }*/
+        
 
         return cell
+    }
+    
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.seleccion = datosReceta[indexPath.row]
     }
  
 

@@ -73,5 +73,64 @@ class RecipeController {
         return allRecipes
     }
     
+    static func clasifyByDificulty (allRecipes: [Receta]) -> [[Receta]]{
+        
+        var arraysClasified: [[Receta]] = []
+        var easyRecipes: [Receta] = []
+        var mediumRecipes: [Receta] = []
+        var hardRecipes: [Receta] = []
+        
+        for receta in allRecipes{
+            switch receta.dificultad {
+            case "easy":
+                easyRecipes.append(receta)
+            case "medium":
+                mediumRecipes.append(receta)
+            case "hard":
+                hardRecipes.append(receta)
+            default:
+                break
+            }
+        }
+        
+        arraysClasified.append(easyRecipes)
+        arraysClasified.append(mediumRecipes)
+        arraysClasified.append(hardRecipes)
+        
+        return arraysClasified
+    }
+    
+    static func clasifyByTime (allRecipes: [Receta]) -> [[Receta]]{
+        var arraysClasified: [[Receta]] = []
+        var fifteenMinutes: [Receta] = []
+        var thirtyMinutes: [Receta] = []
+        var fortyMinutes: [Receta] = []
+        var hourPlus: [Receta] = []
+        
+        for receta in allRecipes {
+            let tiempo = Int(receta.tiempoEnMinutos)
+            
+            if tiempo! >= 15 && tiempo! < 30{
+                fifteenMinutes.append(receta)
+            }
+            else if tiempo! >= 30 && tiempo! < 40 {
+                thirtyMinutes.append(receta)
+            }
+            else if tiempo! >= 40 && tiempo! < 50 {
+                fortyMinutes.append(receta)
+            }
+            else {
+                hourPlus.append(receta)
+            }
+            
+        }
+        
+        arraysClasified.append(fifteenMinutes)
+        arraysClasified.append(thirtyMinutes)
+        arraysClasified.append(fortyMinutes)
+        arraysClasified.append(hourPlus)
+        
+        return arraysClasified
+    }
 
 }

@@ -11,7 +11,6 @@
 		AC062A3D21B1AE5600D502C0 /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC062A3C21B1AE5600D502C0 /* TipsTableViewController.swift */; };
 		AC062A3F21B1B20E00D502C0 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC062A3E21B1B20E00D502C0 /* TipsViewController.swift */; };
 		AC42F10121B5AD9900FBAC61 /* RecetaShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC42F10021B5AD9900FBAC61 /* RecetaShowViewController.swift */; };
-		AC42F10321B5B51300FBAC61 /* RecetaControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC42F10221B5B51300FBAC61 /* RecetaControllerDelegate.swift */; };
 		ACF29B0B21A71EB80092D5A5 /* RecetaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */; };
 		ACF82611219B379F004875B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82610219B379F004875B2 /* AppDelegate.swift */; };
 		ACF82613219B379F004875B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF82612219B379F004875B2 /* ViewController.swift */; };
@@ -47,7 +46,6 @@
 		AC062A3C21B1AE5600D502C0 /* TipsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
 		AC062A3E21B1B20E00D502C0 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		AC42F10021B5AD9900FBAC61 /* RecetaShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaShowViewController.swift; sourceTree = "<group>"; };
-		AC42F10221B5B51300FBAC61 /* RecetaControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaControllerDelegate.swift; sourceTree = "<group>"; };
 		ACF29B0A21A71EB80092D5A5 /* RecetaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaController.swift; sourceTree = "<group>"; };
 		ACF8260D219B379F004875B2 /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF82610219B379F004875B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +99,7 @@
 				AC062A3C21B1AE5600D502C0 /* TipsTableViewController.swift */,
 				AC062A3E21B1B20E00D502C0 /* TipsViewController.swift */,
 				AC42F10021B5AD9900FBAC61 /* RecetaShowViewController.swift */,
-				AC42F10221B5B51300FBAC61 /* RecetaControllerDelegate.swift */,
+				ACF82612219B379F004875B2 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,7 +130,6 @@
 				ACF29B0921A71EA10092D5A5 /* Controller */,
 				EC760EAB21A612E200474F84 /* Models */,
 				ACF82610219B379F004875B2 /* AppDelegate.swift */,
-				ACF82612219B379F004875B2 /* ViewController.swift */,
 				ACF82614219B379F004875B2 /* Main.storyboard */,
 				ACF82617219B37A0004875B2 /* Assets.xcassets */,
 				AC0160F121B1DD2F005B4268 /* recipes.json */,
@@ -306,7 +303,6 @@
 				EC6B673F21AE40CB00CBFAC0 /* RecetaTableViewController.swift in Sources */,
 				AC42F10121B5AD9900FBAC61 /* RecetaShowViewController.swift in Sources */,
 				EC20C21521AF2127001CEDEC /* RecetaTableViewCell.swift in Sources */,
-				AC42F10321B5B51300FBAC61 /* RecetaControllerDelegate.swift in Sources */,
 				AC062A3D21B1AE5600D502C0 /* TipsTableViewController.swift in Sources */,
 				ACF82611219B379F004875B2 /* AppDelegate.swift in Sources */,
 				EC760EAE21A6130600474F84 /* RecipeModel.swift in Sources */,

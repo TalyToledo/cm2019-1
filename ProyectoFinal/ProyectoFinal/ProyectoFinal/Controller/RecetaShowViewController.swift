@@ -17,23 +17,17 @@ class RecetaShowViewController: UIViewController {
     @IBOutlet weak var recetaImage: UIImageView!
     @IBOutlet weak var ingredientesLabel: UILabel!
     @IBOutlet weak var tiempoLabel: UILabel!
+    @IBOutlet weak var tituloReceta: UILabel!
     
-    var delegate: RecetaControllerDelegate! = nil
+    var selectedRecipe: Receta?
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Pass the selected object to the new view controller.
-        if segue.identifier == "segueShow"{
-            let info = segue.destination as! RecetaTableViewController
-            info.delegate = self as? RecetaControllerDelegate
-        }
     override func viewDidLoad() {
         super.viewDidLoad()
-        recetaImage.image = UIImage(named: "<#T##String#>" + ".jpg")
-        ingredientesLabel.text = info.datosReceta.description
+        recetaImage.image = UIImage(named: "imagenReceta.png")
+        //ingredientesLabel.text = 
+        tituloReceta.text = selectedRecipe?.titulo
+        tiempoLabel.text = selectedRecipe?.tiempoEnMinutos
         // Do any additional setup after loading the view.
-    }
-    
-
     }
     
     
