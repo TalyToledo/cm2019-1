@@ -8,8 +8,13 @@
 
 import UIKit
 
-class RecetaTableViewController: UITableViewController {
+class RecetaTableViewController: UITableViewController, RecetaControllerDelegate{
+    func didSelectReceta(controller: UITableViewController, unaReceta: [Receta]) {
+        self.datosReceta = unaReceta
+    }
     
+
+    var delegate: RecetaControllerDelegate! = nil
     var selectedCategory = 0
     var datosReceta: [Receta] = []
     var nameOfFile: String = "recipes"
@@ -70,9 +75,6 @@ class RecetaTableViewController: UITableViewController {
 
         return cell
     }
-    
-    
-    
-    
+ 
 
 }

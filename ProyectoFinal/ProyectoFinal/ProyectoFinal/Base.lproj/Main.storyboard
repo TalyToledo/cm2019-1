@@ -140,7 +140,7 @@
                                     <outlet property="platilloImagen" destination="iHr-Pl-giZ" id="FWa-5A-muV"/>
                                     <outlet property="timePlatilloLabel" destination="3Ol-Ll-7aq" id="oBY-id-uCU"/>
                                     <outlet property="titlePlatilloLabel" destination="QAk-0z-rwf" id="LOG-NC-m0t"/>
-                                    <segue destination="KX4-Kr-bLP" kind="show" id="xLf-2u-Axq"/>
+                                    <segue destination="KX4-Kr-bLP" kind="show" identifier="segueShow" id="xLf-2u-Axq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -234,7 +234,7 @@
         <!--Receta-->
         <scene sceneID="jwR-xH-Fe4">
             <objects>
-                <viewController id="KX4-Kr-bLP" sceneMemberID="viewController">
+                <viewController id="KX4-Kr-bLP" customClass="RecetaShowViewController" customModule="ProyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rRy-us-eZW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,13 +253,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-WM-7YJ">
-                                <rect key="frame" x="85" y="633" width="58" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doM-Lz-Ose">
                                 <rect key="frame" x="67" y="88" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -273,15 +266,41 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Medidas equivalentes"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1y-6B-DZe">
+                                <rect key="frame" x="16" y="433" width="343" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnZ-uF-4r9">
+                                <rect key="frame" x="16" y="669" width="343" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tiempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-WM-7YJ">
+                                <rect key="frame" x="16" y="633" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aG0-Uf-sMZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Receta" id="K3W-U8-WhC"/>
+                    <connections>
+                        <outlet property="ingredientesLabel" destination="v1y-6B-DZe" id="geW-Mt-IMo"/>
+                        <outlet property="recetaImage" destination="esz-0i-ffm" id="Yna-x9-5qR"/>
+                        <outlet property="tiempoLabel" destination="FnZ-uF-4r9" id="MA9-kb-O6U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFO-yS-IJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2935" y="134"/>
+            <point key="canvasLocation" x="2933.5999999999999" y="133.74384236453201"/>
         </scene>
         <!--INFO-->
         <scene sceneID="Jx1-iV-tdP">
@@ -358,6 +377,6 @@
         <image name="logo" width="743.52001953125" height="649.91998291015625"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="65F-MP-u9e"/>
+        <segue reference="2ge-HG-S1U"/>
     </inferredMetricsTieBreakers>
 </document>
