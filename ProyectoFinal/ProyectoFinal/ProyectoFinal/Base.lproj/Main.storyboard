@@ -96,7 +96,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="149.66666666666666"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iHr-Pl-giZ">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagenReceta" translatesAutoresizingMaskIntoConstraints="NO" id="iHr-Pl-giZ">
                                             <rect key="frame" x="16" y="10" width="157" height="129"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="129" id="BkC-Bt-KHJ"/>
@@ -210,7 +210,7 @@
                                 <rect key="frame" x="31" y="231" width="313" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-wD-aCi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-wD-aCi">
                                 <rect key="frame" x="31" y="552" width="313" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -354,6 +354,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imagenReceta" width="108" height="108"/>
         <image name="logo" width="743.52001953125" height="649.91998291015625"/>
     </resources>
     <inferredMetricsTieBreakers>

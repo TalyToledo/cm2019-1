@@ -18,8 +18,8 @@ class RecetaTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        datosReceta = RecipeController.loadJson(filename: "recipies.json")!
-        debugPrint(datosReceta)
+        datosReceta = RecipeController.getInfo()
+        //debugPrint(datosReceta)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,17 +30,18 @@ class RecetaTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        if selectedCategory == 2{
+        /*if selectedCategory == 2{
             return 3
         } else if selectedCategory == 3 {
             return 5
         }
-        else {return 0}
+        else {return 0}*/
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return datosReceta.count
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
