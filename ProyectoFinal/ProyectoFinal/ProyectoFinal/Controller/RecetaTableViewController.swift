@@ -83,9 +83,21 @@ class RecetaTableViewController: UITableViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Pass the selected object to the new view controller.
         if segue.identifier == "segueShow"{
+            
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let vc = segue.destination as! RecetaShowViewController
-                vc.selectedRecipe = datosReceta[indexPath.row]
+                //vc.selectedRecipe = datosReceta[indexPath.row]
+                if selectedCategory == 2 {
+                    let recipes = RecipeController.clasifyByDificulty(allRecipes: datosReceta)
+                    let currentRecipe = recipes.recetas[indexPath.section][indexPath.row]
+                    vc.selectedRecipe = currentRecipe
+                }
+                if selectedCategory == 3 {
+                    let recipes = RecipeController.clasifyByTime(allRecipes: datosReceta)
+                    let currentRecipe = recipes.recetas[indexPath.section][indexPath.row]
+                    vc.selectedRecipe = currentRecipe
+                }
+                else {vc.selectedRecipe = datosReceta[indexPath.row]}
             }
         }
     }
@@ -104,4 +116,3 @@ class RecetaTableViewController: UITableViewController{
     
     
 }
-
