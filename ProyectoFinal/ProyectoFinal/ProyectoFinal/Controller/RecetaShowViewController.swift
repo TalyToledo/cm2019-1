@@ -30,12 +30,19 @@ class RecetaShowViewController: UIViewController {
     
     func cargaDatos(receta: Receta){
         var steps: String = ""
+        var ingredientes: String = ""
         tituloReceta.text = receta.titulo
         tiempoLabel.text = receta.tiempoEnMinutos + " minutos"
         recetaImage.image = UIImage(named: "imagenReceta.png")
         for item in receta.pasos {
             steps += item + "\n \n"
         }
+        for item in receta.ingredientes{
+            ingredientes += "- "
+            ingredientes += item.nombre + ":" + "\t\t" + item.cantidad + "\t" + item.unidades + "\n"
+            
+        }
+        ingredientesLabel.text = ingredientes
         preparacionLabel.text = steps
         
     }
