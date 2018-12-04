@@ -23,13 +23,15 @@ class RecetaShowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recetaImage.image = UIImage(named: "imagenReceta.png")
-        //ingredientesLabel.text = 
-        tituloReceta.text = selectedRecipe?.titulo
-        tiempoLabel.text = selectedRecipe?.tiempoEnMinutos
+        cargaDatos(receta: selectedRecipe!)
         // Do any additional setup after loading the view.
     }
     
+    func cargaDatos(receta: Receta){
+        tituloReceta.text = receta.titulo
+        tiempoLabel.text = receta.tiempoEnMinutos + " minutos"
+        recetaImage.image = UIImage(named: "imagenReceta.png")
+    }
     
 
     /*

@@ -14,7 +14,7 @@ class RecetaTableViewController: UITableViewController{
     var selectedCategory = 0
     var datosReceta: [Receta] = []
     var clasifRecetas: [[Receta]] = [[]]
-    var seleccion: Receta?
+    //var seleccion: Receta?
     
     @IBOutlet weak var categoriaNavigationItem: UINavigationItem!
     
@@ -52,8 +52,10 @@ class RecetaTableViewController: UITableViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Pass the selected object to the new view controller.
         if segue.identifier == "segueShow"{
-            let vc = segue.destination as! RecetaShowViewController
-            vc.selectedRecipe = seleccion
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let vc = segue.destination as! RecetaShowViewController
+                vc.selectedRecipe = datosReceta[indexPath.row]
+            }
         }
     }
 
@@ -82,9 +84,9 @@ class RecetaTableViewController: UITableViewController{
     }
     
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.seleccion = datosReceta[indexPath.row]
-    }
+    }*/
  
 
 }
