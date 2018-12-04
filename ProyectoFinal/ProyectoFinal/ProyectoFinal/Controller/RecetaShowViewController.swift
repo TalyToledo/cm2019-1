@@ -11,7 +11,6 @@ import UIKit
 
 
 class RecetaShowViewController: UIViewController {
-
     
 
     @IBOutlet weak var recetaImage: UIImageView!
@@ -19,6 +18,17 @@ class RecetaShowViewController: UIViewController {
     @IBOutlet weak var tiempoLabel: UILabel!
     @IBOutlet weak var tituloReceta: UILabel!
     @IBOutlet weak var preparacionLabel: UILabel!
+    
+    // Conversion de unidades
+    @IBOutlet weak var unidadesLabel: UILabel!
+    @IBAction func gramosButton(_ sender: Any)
+    {
+        
+    }
+    @IBAction func tazasButton(_ sender: Any)
+    {
+       
+    }
     
     var selectedRecipe: Receta?
     
@@ -31,21 +41,31 @@ class RecetaShowViewController: UIViewController {
     func cargaDatos(receta: Receta){
         var steps: String = ""
         var ingredientes: String = ""
+        var unidades : String = ""
         tituloReceta.text = receta.titulo
         tiempoLabel.text = receta.tiempoEnMinutos + " minutos"
         recetaImage.image = UIImage(named: "imagenReceta.png")
+        
         for item in receta.pasos {
             steps += item + "\n \n"
         }
         for item in receta.ingredientes{
             ingredientes += "- "
-            ingredientes += item.nombre + ":" + "\t\t" + item.cantidad + "\t" + item.unidades + "\n"
+            ingredientes += item.nombre + ":" + "\t\t\n"//+ item.cantidad + "\t" + item.unidades + "\n"
             
         }
+        
+        for item in receta.ingredientes{
+            unidades += item.cantidad + "\t" + item.unidades + "\n"
+            
+        }
+        unidadesLabel.text = unidades
         ingredientesLabel.text = ingredientes
         preparacionLabel.text = steps
+      
         
     }
+ 
     
 
     /*
