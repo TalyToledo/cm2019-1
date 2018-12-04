@@ -12,7 +12,7 @@ import UIKit
 
 class RecetaShowViewController: UIViewController {
     
-
+    
     @IBOutlet weak var recetaImage: UIImageView!
     @IBOutlet weak var ingredientesLabel: UILabel!
     @IBOutlet weak var tiempoLabel: UILabel!
@@ -21,16 +21,46 @@ class RecetaShowViewController: UIViewController {
     
     // Conversion de unidades
     @IBOutlet weak var unidadesLabel: UILabel!
+    
+    var selectedRecipe: Receta?
+    //var ingredienteConvert: ConvertedAmount
+    
     @IBAction func gramosButton(_ sender: Any)
     {
+        var unidadesConvertidas: String = ""
+        var arrayConversion : [ConvertedAmount] = []
         
+        for ingrediente in (selectedRecipe?.ingredientes)! {
+            ConvertAmounts.getAmounts(ingredientName: ingrediente.nombre, sourceAmount: ingrediente.cantidad, sourceUnit: ingrediente.unidades, targetUnit: "grams") { (result) in
+                arrayConversion.append(result)
+            }
+        }
+        
+        for converted in arrayConversion {
+            unidadesConvertidas += String(converted.targeAmount) + "\t" + converted.targetUnit + "\n"
+        }
+        
+        unidadesLabel.text = unidadesConvertidas
     }
     @IBAction func tazasButton(_ sender: Any)
     {
-       
+        var unidadesConvertidas: String = ""
+        var arrayConversion : [ConvertedAmount] = []
+        
+        
+        for ingrediente in (selectedRecipe?.ingredientes)! {
+            ConvertAmounts.getAmounts(ingredientName: ingrediente.nombre, sourceAmount: ingrediente.cantidad, sourceUnit: ingrediente.unidades, targetUnit: "cups") { (result) in
+                arrayConversion.append(result)
+            }
+        }
+        
+        for converted in arrayConversion {
+            unidadesConvertidas += String(converted.targeAmount) + "\t" + converted.targetUnit + "\n"
+        }
+        
+        unidadesLabel.text = unidadesConvertidas
     }
     
-    var selectedRecipe: Receta?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,20 +92,20 @@ class RecetaShowViewController: UIViewController {
         unidadesLabel.text = unidades
         ingredientesLabel.text = ingredientes
         preparacionLabel.text = steps
-      
+        
         
     }
- 
     
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
