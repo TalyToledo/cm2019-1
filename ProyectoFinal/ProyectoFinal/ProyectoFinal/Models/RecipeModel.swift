@@ -40,6 +40,16 @@ struct Ingrediente: Codable {
     }
 }
 
+class ClasifiedRecipes {
+    var sections: [String] = []
+    var recetas: [[Receta]] = []
+    
+    func add(section: String, receta: [Receta]){
+        sections = sections + [section]
+        recetas = recetas + [receta]
+    }
+}
 
-
-
+/*class AllClasifiedItems {
+    
+}*/

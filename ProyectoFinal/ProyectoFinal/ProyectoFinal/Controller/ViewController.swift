@@ -9,15 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var allRecipes: [Receta] = []
-    var clasification: [[Receta]] = [[]]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         allRecipes = RecipeController.getInfo()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showAll" {
             let vc = segue.destination as! RecetaTableViewController
@@ -30,8 +31,7 @@ class ViewController: UIViewController {
             let vc = segue.destination as! RecetaTableViewController
             let category = 2
             vc.selectedCategory = category
-            clasification = RecipeController.clasifyByDificulty(allRecipes: allRecipes)
-            vc.clasifRecetas = clasification
+            vc.datosReceta = allRecipes
             vc.categoriaNavigationItem.title = "Por dificultad"
         }
         
@@ -39,10 +39,9 @@ class ViewController: UIViewController {
             let vc = segue.destination as! RecetaTableViewController
             let category = 3
             vc.selectedCategory = category
-            vc.clasifRecetas = RecipeController.clasifyByTime(allRecipes: allRecipes)
+            vc.datosReceta = allRecipes
             vc.categoriaNavigationItem.title = "Por Tiempo"
         }
     }
     
 }
-

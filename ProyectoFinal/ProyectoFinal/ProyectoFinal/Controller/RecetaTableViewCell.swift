@@ -14,17 +14,7 @@ class RecetaTableViewCell: UITableViewCell {
     @IBOutlet weak var titlePlatilloLabel: UILabel!
     @IBOutlet weak var timePlatilloLabel: UILabel!
     
-    /*override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }*/
-    
     func setCell(platillo: Receta){
         //platilloImagen.image = UIImage.init(contentsOfFile: "imagenReceta.png")
         platilloImagen.image = UIImage(named: "imagenReceta.png")

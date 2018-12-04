@@ -73,9 +73,9 @@ class RecipeController {
         return allRecipes
     }
     
-    static func clasifyByDificulty (allRecipes: [Receta]) -> [[Receta]]{
+    static func clasifyByDificulty (allRecipes: [Receta]) -> ClasifiedRecipes{
         
-        var arraysClasified: [[Receta]] = []
+        let recetasDificultad = ClasifiedRecipes()
         var easyRecipes: [Receta] = []
         var mediumRecipes: [Receta] = []
         var hardRecipes: [Receta] = []
@@ -84,6 +84,7 @@ class RecipeController {
             switch receta.dificultad {
             case "easy":
                 easyRecipes.append(receta)
+                
             case "medium":
                 mediumRecipes.append(receta)
             case "hard":
@@ -92,16 +93,15 @@ class RecipeController {
                 break
             }
         }
+        recetasDificultad.add(section: "Easy", receta: easyRecipes)
+        recetasDificultad.add(section: "Medium", receta: mediumRecipes)
+        recetasDificultad.add(section: "Hard", receta: hardRecipes)
         
-        arraysClasified.append(easyRecipes)
-        arraysClasified.append(mediumRecipes)
-        arraysClasified.append(hardRecipes)
-        
-        return arraysClasified
+        return recetasDificultad
     }
     
-    static func clasifyByTime (allRecipes: [Receta]) -> [[Receta]]{
-        var arraysClasified: [[Receta]] = []
+    static func clasifyByTime (allRecipes: [Receta]) -> ClasifiedRecipes{
+        let recetasTiempo = ClasifiedRecipes()
         var fifteenMinutes: [Receta] = []
         var thirtyMinutes: [Receta] = []
         var fortyMinutes: [Receta] = []
@@ -124,13 +124,12 @@ class RecipeController {
             }
             
         }
+        recetasTiempo.add(section: "15-30", receta: fifteenMinutes)
+        recetasTiempo.add(section: "30-40", receta: thirtyMinutes)
+        recetasTiempo.add(section: "40-50", receta: fortyMinutes)
+        recetasTiempo.add(section: "+60", receta: hourPlus)
         
-        arraysClasified.append(fifteenMinutes)
-        arraysClasified.append(thirtyMinutes)
-        arraysClasified.append(fortyMinutes)
-        arraysClasified.append(hourPlus)
-        
-        return arraysClasified
+        return recetasTiempo
     }
-
+    
 }
