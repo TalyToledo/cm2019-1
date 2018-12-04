@@ -74,7 +74,7 @@ class RecetaShowViewController: UIViewController {
         var unidades : String = ""
         tituloReceta.text = receta.titulo
         tiempoLabel.text = receta.tiempoEnMinutos + " minutos"
-        recetaImage.image = UIImage(named: "imagenReceta.png")
+        recetaImage.image = UIImage(named: receta.titulo ?? "imagenReceta")
         
         for item in receta.pasos {
             steps += item + "\n \n"

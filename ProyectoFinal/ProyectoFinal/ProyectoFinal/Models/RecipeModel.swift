@@ -9,7 +9,7 @@
 import Foundation
 
 struct Receta: Codable {
-    var titulo: String
+    var titulo: String?
     var tiempoEnMinutos: String
     var tipoCocina: String
     var dificultad: String
