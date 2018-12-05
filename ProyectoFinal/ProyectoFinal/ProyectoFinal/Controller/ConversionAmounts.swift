@@ -5,7 +5,6 @@
 //  Created by Usuario invitado on 12/4/18.
 //  Copyright © 2018 Usuario invitado. All rights reserved.
 //
-
 import Foundation
 import UIKit
 
@@ -22,8 +21,24 @@ extension URL {
 struct ConvertedAmount: Codable {
     var sourceAmount: Float
     var sourceUnit: String
-    var targeAmount: Float
+    var targetAmount: Float
     var targetUnit: String
+    
+    enum CodingKeys: String, CodingKey {
+        case sourceAmount
+        case sourceUnit
+        case targetAmount
+        case targetUnit
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        sourceAmount = try values.decode(Float.self, forKey: CodingKeys.sourceAmount)
+        sourceUnit = try values.decode(String.self, forKey: CodingKeys.sourceUnit)
+        targetAmount = try values.decode(Float.self, forKey: CodingKeys.targetAmount)
+        targetUnit = try values.decode(String.self, forKey: CodingKeys.targetUnit)
+        
+    }
 }
 
 class ConvertAmounts {
@@ -55,8 +70,13 @@ class ConvertAmounts {
                 debugPrint("Error, out of range")
                 return
             }
-            guard let data = data, let datos = decodeData(data: data) else{return}
-            onSuccess(datos)
+            guard let data = data else{return}
+            
+            guard let conversion = try? JSONDecoder().decode(ConvertedAmount.self, from: data) else {
+                debugPrint("Can't decode data")
+                return
+            }
+            onSuccess(conversion)
         }
         task.resume()
         

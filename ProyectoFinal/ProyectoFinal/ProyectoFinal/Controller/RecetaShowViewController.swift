@@ -37,7 +37,7 @@ class RecetaShowViewController: UIViewController {
         }
         
         for converted in arrayConversion {
-            unidadesConvertidas += String(converted.targeAmount) + "\t" + converted.targetUnit + "\n"
+            unidadesConvertidas += String(converted.targetAmount) + "\t" + converted.targetUnit + "\n"
         }
         
         unidadesLabel.text = unidadesConvertidas
@@ -55,7 +55,7 @@ class RecetaShowViewController: UIViewController {
         }
         
         for converted in arrayConversion {
-            unidadesConvertidas += String(converted.targeAmount) + "\t" + converted.targetUnit + "\n"
+            unidadesConvertidas += String(converted.targetAmount) + "\t" + converted.targetUnit + "\n"
         }
         
         unidadesLabel.text = unidadesConvertidas
